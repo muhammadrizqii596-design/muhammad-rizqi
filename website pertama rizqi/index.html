@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrastruktur TI - Web Profil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<body>
+    <section id="profil" class="profil-section">
+    <h2>Profil Pengembang</h2>
+    <div class="profil-container">
+        <!-- Pastikan nama file foto sesuai dengan yang Anda miliki (misal: IMG_1984.JPG) -->
+        <img src="IMG_1984.JPG" alt="Foto Profil" class="profil-img">
+        
+        <div class="profil-info">
+            <h3>Muhammad Rizqi</h3>
+            <p class="prodi">Program Studi: Teknologi Informasi</p>
+            <p class="deskripsi">"Membangun solusi digital yang responsif dan terstruktur dengan baik."</p>
+        </div>
+
+        <div class="social-icons">
+            <!-- Ganti username_ig dengan username Anda -->
+            <a href="https://instagram.com/muhammadrizqi512?dlrf=Mnlrdmc0MXZkbHgx_ig" target="_blank" class="btn-ig">
+                <i class="fab fa-instagram"></i> Instagram Rizqi
+            </a>
+            <!-- Ganti 628... dengan nomor WA Anda (gunakan 62 pengganti 0) -->
+            <a href="https://wa.me/6281260506736" target="_blank" class="btn-wa">
+                <i class="fab fa-whatsapp"></i> WhatsApp Rizqi
+            </a>
+        </div>
+    </div>
+<!-- GARIS PEMBATAS MODERN -->
+<hr class="garis-pembatas">
+
+<!-- BAGIAN SISTEM & SERVER (Dengan Background Pemandangan) -->
+<section id="infrastruktur" class="sistem-section">
+    <div class="overlay-gelap"></div> <!-- Efek gelap agar teks tetap terbaca jelas -->
+    <div class="konten-sistem">
+        <h2>Sistem & Server</h2>
+        <div class="card-container">
+            
+            <!-- Kartu 1: HTML/CSS/JS -->
+            <div class="card" onclick="bukaDetail('detail1')">
+                <h3>HTML/CSS/JS</h3>
+                <p>Fondasi utama pembuatan "user interface" yang responsif.</p>
+                <div id="detail1" class="detail-sembunyi">
+                    <p><strong>Lebih Dalam:</strong> HTML memberi kerangka, CSS memberi keindahan visual, dan JavaScript memberikan interaksi logika agar website hidup dan tidak kaku.</p>
+                </div>
+                <span class="teks-klik">Klik untuk detail <i class="fas fa-chevron-down"></i></span>
+            </div>
+
+            <!-- Kartu 2: Live Server -->
+            <div class="card" onclick="bukaDetail('detail2')">
+                <h3>Live Server</h3>
+                <p>Web server lokal untuk pengujian "real-time".</p>
+                <div id="detail2" class="detail-sembunyi">
+                    <p><strong>Lebih Dalam:</strong> Membantu *developer* melihat perubahan kode secara instan di browser tanpa perlu repot menekan tombol *refresh* (F5) berulang kali.</p>
+                </div>
+                <span class="teks-klik">Klik untuk detail <i class="fas fa-chevron-down"></i></span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- GARIS PEMBATAS MODERN -->
+<hr class="garis-pembatas">
+
+<!-- (Biarkan form Hubungi Saya yang sudah Anda buat ada di sini) -->
+
+<!-- PENUTUP WEBSITE -->
+<footer class="penutup-web">
+    <div class="isi-penutup">
+        <h3>Terima Kasih Telah Berkunjung!</h3>
+        <p>Website ini dibuat oleh Muhammad Rizqi sebagai bagian dari tugas Infrastruktur TI untuk terus belajar dan berinovasi di dunia digital.</p>
+        <p class="copyright">&copy; 2026 Muhammad Rizqi. Semua Hak Dilindungi.</p>
+    </div>
+</footer>
+
+    <section id="kontak" class="section">
+        <h2>Hubungi Saya</h2>
+        <form id="form-kontak">
+            <input type="text" id="nama" placeholder="Nama Anda" required>
+            <input type="email" id="email" placeholder="Email Anda" required>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
